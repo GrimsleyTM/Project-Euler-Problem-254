@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Euler254.Solver-20210818-194547</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1165 (21H1/May2021Update)
+AMD Ryzen 9 5900X, 1 CPU, 24 logical and 12 physical cores
+.NET SDK=5.0.103
+  [Host]     : .NET 5.0.3 (5.0.321.7212), X64 RyuJIT
+  DefaultJob : .NET 5.0.3 (5.0.321.7212), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>           Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Gen 1</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>PopulateGLookupArrayOld</td><td>321.08 &mu;s</td><td>0.203 &mu;s</td><td>0.159 &mu;s</td><td>89.8438</td><td>0.9766</td><td>1,475 KB</td>
+</tr><tr><td>PopulateGLookupArray</td><td>25.81 &mu;s</td><td>0.075 &mu;s</td><td>0.066 &mu;s</td><td>5.6152</td><td>0.0610</td><td>92 KB</td>
+</tr></tbody></table>
+</body>
+</html>
